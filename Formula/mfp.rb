@@ -11,7 +11,7 @@ class Mfp < Formula
 
   def install
     system "go", "build",
-      "-ldflags", "-X main.version=#{version}",
+      "-ldflags", "-X main.version=v#{version}",
       "-o", bin/"mfp",
       "./cmd/mfp"
   end
