@@ -5,23 +5,23 @@
 class Mfp < Formula
   desc "Terminal UI for musicforprogramming.net — streams all MFP episodes in your terminal"
   homepage "https://github.com/fpigeonjr/music-for-coding-tui"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   depends_on "mpv"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.2.0/mfp_0.2.0_darwin_amd64.tar.gz"
-      sha256 "d3c549158041aadb1fd07666c8de06d2f44fff146151f1512313df54391524ee"
+      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.3.0/mfp_0.3.0_darwin_amd64.tar.gz"
+      sha256 "3d83c0eccd0a1172e141734ddfdcb5725a7a414725b37f578d417e207cbf67d1"
 
       define_method(:install) do
         bin.install "mfp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.2.0/mfp_0.2.0_darwin_arm64.tar.gz"
-      sha256 "44fc239b64909ddb999ce9e72c697715cddfbac020e651e3755977841ee2c4a5"
+      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.3.0/mfp_0.3.0_darwin_arm64.tar.gz"
+      sha256 "df598ffd16422a0dcce4d529d91e756e831f2a4f5d6b68f6ea9c7b268459ce99"
 
       define_method(:install) do
         bin.install "mfp"
@@ -31,15 +31,15 @@ class Mfp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.2.0/mfp_0.2.0_linux_amd64.tar.gz"
-      sha256 "0e6b63a5b8916cc8699be2f2dc09b5f38aa944ab9537f3bfaf356887f8169009"
+      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.3.0/mfp_0.3.0_linux_amd64.tar.gz"
+      sha256 "6b2aca073cf171cb1a897ffe9b86bf7d9501a10a8efae177e3e5913e5c91e644"
       define_method(:install) do
         bin.install "mfp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.2.0/mfp_0.2.0_linux_arm64.tar.gz"
-      sha256 "77b1451bb2425ff5dbec93760ef99fc40411a4aa1f59246983cd787af53b8c46"
+      url "https://github.com/fpigeonjr/music-for-coding-tui/releases/download/v0.3.0/mfp_0.3.0_linux_arm64.tar.gz"
+      sha256 "eaf8e8afbf1afeb4ad49b458efda7aa7fc05e1b241cec54463258c653ef91eae"
       define_method(:install) do
         bin.install "mfp"
       end
